@@ -38,12 +38,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/compulim/for-jest.git"
+    "url": "https://github.com/teamonting/for-jest.git"
   },
   "bugs": {
-    "url": "https://github.com/compulim/for-jest/issues"
+    "url": "https://github.com/teamonting/for-jest/issues"
   },
-  "homepage": "https://github.com/compulim/for-jest#readme",
+  "homepage": "https://github.com/teamonting/for-jest#readme",
   "localPeerDependencies": {
     "@onting/common": "0.0.0-0",
     "@onting/test-harness": "0.0.0-0"
