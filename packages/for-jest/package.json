@@ -73,6 +73,6 @@
     "selenium-webdriver": "^4.44.0"
   },
   "dependencies": {
-    "@onting/browser": "^0.1.0-main.202606270656.81c164d"
+    "@onting/browser": "^0.1.0-main.202606272017.46c6c25"
   }
 }
