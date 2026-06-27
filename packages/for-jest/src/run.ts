@@ -24,7 +24,7 @@ async function run(
   using session = new WebDriverSession(webDriver, stubHostImplementation);
 
   const promise = new Promise<void>((resolve, reject) => {
-    session.addEventListener('close', () => reject(new Error('Browser closed without result')));
+    session.addEventListener('close', () => reject(new Error('Browser closed without result')), { once: true });
     session.addEventListener('console', ({ args, method, timestamp }) => {
       if (init?.pipeConsole) {
         console.log(method, new Date(timestamp).toISOString(), ...args);
@@ -40,7 +40,7 @@ async function run(
         }
       }
     });
-    session.addEventListener('error', ({ error }) => reject(error));
+    session.addEventListener('error', ({ error }) => reject(error), { once: true });
   });
 
   await webDriver.navigate().to(url);
