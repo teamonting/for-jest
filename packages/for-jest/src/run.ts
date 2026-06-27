@@ -1,6 +1,6 @@
 import { buildDriverService, buildWebDriver } from '@onting/browser/builder.js';
 import { WebDriverSession } from '@onting/browser/WebDriverSession.js';
-import stubHostImplementation from '@onting/stub/implementation';
+import stubHostImplementation from '@onting/stub/implementation.js';
 import createDummyDriverService from './createDummyDriverService.ts';
 
 async function run(

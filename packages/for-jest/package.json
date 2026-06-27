@@ -69,7 +69,7 @@
   "license": "MIT",
   "pinDependencies": {},
   "peerDependencies": {
-    "@onting/stub": "^0.1.0-main.202606220047.2c7c295",
+    "@onting/stub": "^0.1.0-main",
     "selenium-webdriver": "^4.44.0"
   },
   "dependencies": {
