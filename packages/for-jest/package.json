@@ -73,6 +73,7 @@
     "selenium-webdriver": "^4.44.0"
   },
   "dependencies": {
-    "@onting/browser": "^0.1.0-main.202606272017.46c6c25"
+    "@onting/browser": "^0.1.0-main.202606280042.22f0bd9",
+    "valibot": "^1.4.1"
   }
 }

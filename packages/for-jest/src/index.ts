@@ -1,7 +1,10 @@
-import run from './run.ts';
+import test from 'node:test';
+import BrowserRun from './BrowserRun.ts';
 
-console.log('Hello, World!');
+test('should run', async () => {
+  const run = new BrowserRun('http://localhost:5000');
 
-await run('http://localhost:5000', { pipeConsole: true });
+  run.addEventListener('console', ({ data, method }) => console.log(`[${method}]`, ...data));
 
-console.log('Test done.');
+  await run.successPromise;
+});
